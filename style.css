@@ -1,60 +1,21 @@
-.form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 16px;
-  background: #f7f7f7;
-}
-.form h1 {
-  background: #171c30;
-  padding: 20px 0;
-  font-weight: 300;
+h1 {
   text-align: center;
-  color: #fff;
-  margin: -16px -16px 16px -16px;
-  font-size: 25px;
-}
-.form input[type="text"],
-.form input[type="url"] {
-  box-sizing: border-box;
-  width: 100%;
-  background: #fff;
-  margin-bottom: 4%;
-  border: 1px solid #ccc;
-  padding: 3%;
-  color: #555;
-}
-.form input[type="text"]:focus,
-.form input[type="url"]:focus {
-  box-shadow: 0 0 5px #171c30;
-  padding: 3%;
-  border: 1px solid #171c30;
 }
 
-.form button {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  width: 150px;
-  margin: 0 auto;
-  padding: 3%;
-  background: #171c30;
-  border-bottom: 2px solid #171c30;
-  border-top-style: none;
-  border-right-style: none;
-  border-left-style: none;
-  color: #fff;
-  cursor: pointer;
-}
-.form button:hover {
-  background: #283155;
-}
-#qrcode-container {
-  display: none;
+#reader {
+  width: 500px;
 }
 
-.qrcode {
-  padding: 16px;
+.result {
+  background-color: green;
+  color: #fff;
+  padding: 20px;
 }
-.qrcode img {
-  margin: 0 auto;
+
+.row {
+  display: flex;
+}
+
+#reader__scan_region {
+  background: white;
 }

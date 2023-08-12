@@ -1,41 +1,26 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>QR Code Scanner or Reader | CodingNepal</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Awesome CDN Link for Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <title>Document</title>
   </head>
   <body>
-    <!-- QrCodeJs Library  -->
-    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <h1>QR Code Reader using Javascript</h1>
 
-    <div class="form">
-      <h1>QR Code using qrcodejs</h1>
-      <form>
-        <input
-          type="url"
-          id="url"
-          name="url"
-          placeholder="https://webisora.com"
-          required
-        />
-        <button type="button" onclick="generateQRCode()">
-          Generate QR Code
-        </button>
-      </form>
-
-      <div id="qrcode-container">
-        <div id="qrcode" class="qrcode"></div>
+    <!-- QR SCANNER CODE BELOW  -->
+    <div class="row">
+      <div class="col">
+        <div id="reader"></div>
       </div>
-
-      <script src="main.js"></script>
+      <div class="col" style="padding: 30px">
+        <h4>Scan Result</h4>
+        <div id="result">Result goes here</div>
+      </div>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/qrcode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.2.0/html5-qrcode.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
